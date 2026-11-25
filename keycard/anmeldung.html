@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Keycard</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center;
+         font: 15px/1.4 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  main { max-width: 22rem; padding: 1.5rem; text-align: center; }
+  h1 { font-weight: 300; margin: 0 0 .5rem; }
+  a { display: inline-block; margin-top: 1rem; padding: .6rem 1.2rem; border-radius: .6rem;
+      background: #3e6ae1; color: #fff; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Keycard</h1>
+  <p id="text">Diese Seite gibt die Anmeldung bei Tesla an Keycard auf deinem Mac weiter.</p>
+  <a id="open" href="keycard://anmeldung" hidden>Keycard öffnen</a>
+</main>
+<script src="anmeldung.js"></script>
+</body>
+</html>
