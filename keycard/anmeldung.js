@@ -1,5 +1,5 @@
-// Reicht Teslas Antwort an Keycard weiter (keycard://anmeldung) und vergisst sie. Kein Server, nichts
-// wird gespeichert oder anderswohin geschickt. Der Code allein nützt niemandem: Keycard tauscht ihn
+// Reicht Teslas Antwort an Tether weiter (keycard://anmeldung) und vergisst sie. Kein Server, nichts
+// wird gespeichert oder anderswohin geschickt. Der Code allein nützt niemandem: Tether tauscht ihn
 // nur zusammen mit Client-Secret und PKCE-Prüfwert, die beide den Mac nie verlassen.
 (function () {
   var query = new URLSearchParams(location.search);
@@ -16,7 +16,7 @@
   link.href = target;
   link.hidden = false;
   document.getElementById("text").textContent = forward.has("error")
-    ? "Tesla hat die Anmeldung nicht erlaubt. Keycard zeigt die Einzelheiten."
-    : "Angemeldet. Keycard übernimmt. Falls nichts passiert:";
+    ? "Tesla hat die Anmeldung nicht erlaubt. Tether zeigt die Einzelheiten."
+    : "Angemeldet. Tether übernimmt. Falls nichts passiert:";
   location.href = target;
 })();
